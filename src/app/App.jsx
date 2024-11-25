@@ -3,7 +3,7 @@
 const App = () => {
   return (
     <div>
-      
+      <p>Fungi Cycle</p>
     </div>
   )
 }
