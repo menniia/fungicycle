@@ -1,9 +1,16 @@
+import ContactForm from "../components/ContactForm"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import HeroSection from "../components/HeroSection"
 
 
 const App = () => {
   return (
     <div>
-      <p>Fungi Cycle</p>
+      <Header/>
+      <HeroSection/>
+      <ContactForm />
+      <Footer />
     </div>
   )
 }
