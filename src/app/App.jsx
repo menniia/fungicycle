@@ -7,12 +7,14 @@ import Navbar from "../components/Navbar"
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <HeroSection/>
-      <Features />
-      <ContactForm />
-      <Footer />
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <div className="pt-16">
+        <HeroSection />
+        <Features />
+        <ContactForm />
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
-import { FaInstagram, FaLeaf } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { Sprout } from "lucide-react";
+import { FaMeta } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -9,8 +10,10 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <FaLeaf className="text-green-500 text-2xl" />
-                            <span className="text-xl font-bold text-white">Fungi Cycle</span>
+                            <a href="/" className="flex items-center space-x-2">
+                                <Sprout className="h-8 w-8 text-green-600" />
+                                <span className="font-bold text-xl text-green-600">Fungi Cycle</span>
+                            </a>
                         </div>
                         <p className="text-sm">
                             Revolutionizing sustainable practices through innovative fugal solutions
@@ -20,10 +23,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="hover:text-green-500 transition-colors">Home</a></li>
+                            <li><a href="/" className="hover:text-green-500 transition-colors">Home</a></li>
                             <li><a href="#" className="hover:text-green-500 transition-colors">About Us</a></li>
                             <li><a href="#" className="hover:text-green-500 transition-colors">Services</a></li>
-                            <li><a href="#" className="hover:text-green-500 transition-colors">Contact</a></li>
+                            <li><a href="#contact" className="hover:text-green-500 transition-colors">Contact</a></li>
                         </ul>
                     </div>
 
@@ -39,7 +42,7 @@ const Footer = () => {
                         <h3 className="text-white font-semibold mb-4">Connect with Us</h3>
                         <div className="flex space-x-4">
                             <a
-                                href="https://instagram.com"
+                                href="https://www.instagram.com/fungi_cycle?igsh=aDUzeTE5aXQ3dmQx"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-green-500 transition-colors"
@@ -47,12 +50,20 @@ const Footer = () => {
                                 <FaInstagram className="text-2xl" />
                             </a>
                             <a
-                                href="https://x.com"
+                                href="https://www.facebook.com/profile.php?id=61570396109659"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:text-green-500 transition-colors"
                             >
-                                <FaXTwitter className="text-2xl" />
+                                <FaMeta className="text-2xl" />
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/@fungicycle?lang=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-green-500 transition-colors"
+                            >
+                                <FaTiktok className="text-2xl" />
                             </a>
                         </div>
                     </div>
